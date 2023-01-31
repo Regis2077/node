@@ -1,0 +1,28 @@
+POST http://localhost:4002/products
+Content-Type: application/json
+
+{
+    "name": "notebook asus",
+    "quantity": 200 
+}
+
+###
+GET http://localhost:4002/products
+
+###
+
+GET http://localhost:4002/products/201e578e-80a7-4de3-9e65-a346a158ffb5
+
+###
+
+PUT http://localhost:4002/products/7579a471-e244-479b-885f-f33ba0588e09
+Content-Type: application/json
+
+{
+    "name": "iphone 12",
+    "quantity": 15
+}
+
+### 
+DELETE  http://localhost:4002/products/7579a471-e244-479b-885f-f33ba0588e09
+Content-Type: application/json
